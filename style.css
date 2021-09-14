@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #5c7cfa;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 3rem;
+  color: white;
+  margin-left: 9rem;
+}
+
+.add-book {
+  font-size: 1.5rem;
+  background-color: #364fc7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 0 1rem;
+  color: white;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  margin-right: 5rem;
+  cursor: pointer;
+}
+
+.add-book:hover,
+.add-book.active {
+  background-color: #748ffc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.info-menu {
+  width: 25rem;
+  position: fixed;
+  left: 0;
+  top: 6rem;
+  bottom: 0;
+  background-color: #e9ecef;
+}
+
+.info-bar-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #212529;
+}
+
+.info-bar-text {
+  font-size: 1.2rem;
+  color: #212529;
+  margin: 2rem;
+}
+
+.books-container {
+  margin: 8rem 0rem 1rem 26rem;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  justify-items: center;
+  row-gap: 5rem;
+}
