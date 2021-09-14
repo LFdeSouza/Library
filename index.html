@@ -13,21 +13,46 @@
       <h1 class="title">My Library</h1>
     </div>
 
-    <div class="info-menu">
-      <h2 class="info-bar-title">Info</h2>
-      <form class="entryFields">
+    <div class="fields-menu">
+      <form class="entry-fields">
         <label>Title:</label>
-        <input type="text" id="bookTitle" /><br />
+        <input
+          type="text"
+          class="input-fields"
+          autocomplete="off"
+          id="bookTitle"
+        />
         <label>Author:</label>
-        <input type="text" id="bookAuthor" /><br />
+        <input
+          type="text"
+          class="input-fields"
+          autocomplete="off"
+          id="bookAuthor"
+        />
         <label>Number of Pages:</label>
-        <input type="text" id="bookPages" />
+        <input
+          type="text"
+          class="input-fields"
+          autocomplete="off"
+          id="bookPages"
+        />
+        <div>
+          <input type="checkbox" id="read-mark" />Have you read the book?
+        </div>
+        <button class="add-book">ADD BOOK</button>
       </form>
-      <p class="info-bar-text">Number of Books:</p>
-      <p class="info-bar-text">Finished books:</p>
-      <button class="add-book">add Book</button>
     </div>
 
-    <div class="books-container"></div>
+    <div class="books-container">
+      <ul class="table-header">
+        <tr>
+          <td>Title</td>
+          <td>Author</td>
+          <td>Pages</td>
+          <td>Status</td>
+          <td>Remove</td>
+        </tr>
+      </ul>
+    </div>
   </body>
 </html>
