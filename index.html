@@ -44,15 +44,49 @@
     </div>
 
     <div class="books-container">
-      <ul class="table-header">
-        <tr>
-          <td>Title</td>
-          <td>Author</td>
-          <td>Pages</td>
-          <td>Status</td>
-          <td>Remove</td>
-        </tr>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th class="book-title">Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>The eye of the World</th>
+            <td>Christopher</td>
+            <td>324</td>
+            <td>
+              <ion-icon class="read-icon" name="checkmark-sharp"></ion-icon>
+            </td>
+            <td>
+              <ion-icon class="delete-icon" name="trash"></ion-icon>
+            </td>
+          </tr>
+
+          <tr>
+            <th>The eye of the World</th>
+            <td>Christopher</td>
+            <td>324</td>
+            <td><ion-icon class="not-read-icon" name="close"></ion-icon></td>
+            <td>
+              <ion-icon class="delete-icon" name="trash"></ion-icon>
+            </td>
+          </tr>
+        </tbody>
+
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+      </table>
     </div>
   </body>
 </html>

@@ -92,6 +92,50 @@ body {
   align-items: center;
 }
 
-.table-header td {
-  padding: 5rem;
+table {
+  width: 65rem;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #5c7cfa;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.book-title {
+  width: 30%;
+}
+
+tbody {
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+th,
+td {
+  height: 1rem;
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+
+.read-icon {
+  transform: scale(1.8);
+  color: green;
+  stroke: green;
+}
+.not-read-icon {
+  transform: scale(1.8);
+  color: #c92a2a;
+  stroke: #c92a2a;
+}
+.delete-icon {
+  transform: scale(1.5);
+  color: #495057;
+  stroke: #495057;
 }
