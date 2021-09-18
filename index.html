@@ -20,26 +20,27 @@
           type="text"
           class="input-fields"
           autocomplete="off"
-          id="bookTitle"
+          id="book-title"
         />
         <label>Author:</label>
         <input
           type="text"
           class="input-fields"
           autocomplete="off"
-          id="bookAuthor"
+          id="book-author"
         />
         <label>Number of Pages:</label>
         <input
           type="text"
           class="input-fields"
           autocomplete="off"
-          id="bookPages"
+          id="book-pages"
         />
         <div>
-          <input type="checkbox" id="read-mark" />Have you read the book?
+          <input type="checkbox" id="checkbox" value="true" />Have you read the
+          book?
         </div>
-        <button class="add-book">ADD BOOK</button>
+        <input type="submit" class="add-book" value="add book" />
       </form>
     </div>
 
@@ -54,7 +55,7 @@
             <th>Remove</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody data-book-list>
           <tr>
             <th>The eye of the World</th>
             <td>Christopher</td>

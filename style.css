@@ -72,6 +72,9 @@ body {
   width: 20rem;
   height: 2rem;
   box-shadow: 1px 1px 2px rgb(0 0 0 / 30%);
+  font-size: 1.2rem;
+  color: #343a40;
+  padding-left: 1rem;
 }
 
 .entry-fields label {
@@ -128,14 +131,17 @@ td {
   transform: scale(1.8);
   color: green;
   stroke: green;
+  cursor: pointer;
 }
 .not-read-icon {
   transform: scale(1.8);
   color: #c92a2a;
   stroke: #c92a2a;
+  cursor: pointer;
 }
 .delete-icon {
   transform: scale(1.5);
   color: #495057;
   stroke: #495057;
+  cursor: pointer;
 }
