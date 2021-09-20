@@ -1,3 +1,5 @@
+/* **********General********** */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,8 @@ body {
   font-family: sans-serif;
   background-color: #f8f9fa;
 }
+
+/* **********Upper Title********** */
 
 .nav-menu {
   position: fixed;
@@ -28,24 +32,7 @@ body {
   margin-left: 9rem;
 }
 
-.add-book {
-  font-size: 1.5rem;
-  background-color: #364fc7;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  padding: 0 1rem;
-  color: white;
-  height: 3rem;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 3rem;
-}
-
-.add-book:hover,
-.add-book.active {
-  background-color: #748ffc;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
+/* **********Add book Menu********** */
 
 .fields-menu {
   width: 25rem;
@@ -87,6 +74,27 @@ body {
   transform: scale(1.5);
   border: 1px solid #adb5bd;
 }
+
+.add-book-button {
+  font-size: 1.5rem;
+  background-color: #364fc7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 0 1rem;
+  color: white;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.add-book-button:hover,
+.add-book-button.active {
+  background-color: #748ffc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* **********Books Container********** */
 
 .books-container {
   margin: 8rem 0rem 1rem 26rem;

@@ -25,10 +25,12 @@ function addBookToStorage(newBook) {
   localStorage.books = JSON.stringify(storedBooks);
 }
 
-function removeBookFromStorage(book) {
-  // let storedBooks = JSON.parse(localStorage.books);
-  // storedBooks.push(newBook);
-  // localStorage.books = JSON.stringify(storedBooks);
+function removeBook(titleToDelete) {
+  const storedBooks = JSON.parse(localStorage.books);
+
+  const newLibrary = storedBooks.filter((book) => book.title !== titleToDelete);
+  localStorage.books = JSON.stringify(newLibrary);
+  displayBooks();
 }
 
 function displayBooks(book) {
@@ -73,14 +75,10 @@ function clearFields() {
 }
 
 // Event: Remove Book
-const removeButton = document.querySelectorAll("#book-list");
-removeButton.forEach((button) =>
-  button.addEventListener("click", (e) => {
-    //Remove from list
-    if (e.target.classList.contains("delete-icon")) {
-      console.log(e.target);
-      e.target.parentElement.parentElement.remove();
-      // Remove from storage
-    }
-  })
-);
+const removeButton = document.querySelector("#book-list");
+removeButton.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete-icon")) {
+    console.log(e.target.parentElement.parentElement.firstChild.innerHTML);
+    removeBook(e.target.parentElement.parentElement.firstChild.innerHTML);
+  }
+});
