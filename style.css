@@ -133,6 +133,7 @@ td {
   height: 1rem;
   padding: 1rem 2.5rem;
   text-align: center;
+  word-break: break-word;
 }
 
 .read-icon {
@@ -141,15 +142,46 @@ td {
   stroke: green;
   cursor: pointer;
 }
+
 .not-read-icon {
   transform: scale(1.8);
   color: #c92a2a;
   stroke: #c92a2a;
   cursor: pointer;
 }
+
 .delete-icon {
   transform: scale(1.5);
   color: #495057;
   stroke: #495057;
   cursor: pointer;
+}
+
+/* **********Books Container********** */
+footer p {
+  text-align: center;
+  margin-top: 17rem;
+  font-size: 1.1rem;
+  color: #343a40;
+}
+
+/* **********Alert********** */
+.alert {
+  width: 42rem;
+  height: 2rem;
+  border-radius: 7px;
+  position: fixed;
+  top: 7rem;
+  left: 55rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #343a40;
+}
+
+.error {
+  background-color: #ff6b6b;
+}
+
+.success {
+  background-color: #20c997;
 }
